@@ -6,7 +6,7 @@ import utilities.BrowserFactoryClass;
 import utilities.ConfigDataClass;
 
 public class BaseClass {
-    WebDriver driver;
+    public WebDriver driver;
     public ConfigDataClass conf = new ConfigDataClass();
 
     @BeforeClass
