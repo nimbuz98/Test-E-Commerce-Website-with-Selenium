@@ -7,10 +7,11 @@ import pages.LoginPage;
 import utilities.ReadExcelFile;
 
 public class LoginTest extends BaseClass {
-    String fileName = System.getProperty("user.dir")+"//TestData//ETestData.xlsx";
+    String fileName = System.getProperty("user.dir")+"//testData//ETestData.xlsx";
 
     @Test(dataProvider = "loginDataProvider")
-    public void verity(String user, String pass){
+    public void verify(String user, String pass){
+        System.out.println("Hi port");
         LoginPage lp = new LoginPage(driver);
         lp.portalLogin(user,pass);
     }

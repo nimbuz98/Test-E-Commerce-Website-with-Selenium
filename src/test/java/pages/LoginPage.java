@@ -23,6 +23,7 @@ public class LoginPage {
 
 
     public void portalLogin(String username, String password){
+        System.out.println("Hi");
         logimage.click();
         email.sendKeys(username);
         pass.sendKeys(password);
